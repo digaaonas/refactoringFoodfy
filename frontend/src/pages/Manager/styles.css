@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+:root{
+    --primary-color: #F3D4BC
+}
+
+.index-recipie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 15%;
+    padding: 20px 0px 5px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px;
+    z-index: 1;
+}
+
+.index-recipie .back-dashboard{
+    font: 400 0.4rem Roboto, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(66, 63, 63);
+    width: 25%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 8px;
+    border-left: none;
+    padding: 5px;
+    margin-right: 60px;
+    flex: .1;
+}
+
+.index-recipie h1{
+    font: 600 0.5rem Roboto, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(66, 63, 63);
+    width: 40%;
+    flex: 1;
+}
+
+.index-recipie .button-manager{
+    flex: .5;
+}
+
+.index-recipie .button-manager button{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.index-recipie .button-manager .button-up{
+    margin-left: 30px;
+    cursor: pointer;
+    transition: ease 2s;
+}
+
+.index-recipie .button-manager .button-up .button-up:first-child:hover{
+    transform: rotate(360deg);
+}
+
+.index-recipie .button-manager .button-up:last-child:hover{
+    transform: translateY(4px);
+}
+
+.index-recipie .button-manager .button-douw{
+    display: none;
+}
+
+.content-body{
+    position: absolute;
+    top: 27%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.content-body .list-recipies{
+    width: 100%;
+    min-width: 8vw;
+    min-height: 72vh;
+    display: block;
+    padding: 20px;
+    margin: 0 20px;
+    border-right: 1px solid grey;
+}
+
+.recipies-manager{
+    padding: 8px 0;
+    width: 80%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.recipies-manager h2{
+    font: 400 0.35rem Roboto, sans-serif;
+    padding-right: 5px;
+    color: rgb(73, 68, 68);
+    border: 1px inset var(--primary-color);
+    border-radius: 8px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: ease 500ms;
+}
+
+.recipies-manager h2.selected{
+    background-color: var(--primary-color);
+}
+
+.recipies-manager .open-panel{
+    font: 400 0.3rem Roboto, sans-serif;
+    color: rgb(87, 82, 82);
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+.recipies-manager .open-panel.button-insert{
+    font: 420 0.35rem Roboto, sans-serif;
+    color: rgb(87, 82, 82);
+    width: 11.5%;
+    position: fixed;
+    left: 0;
+    top: 27.5vh;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: none;
+    text-align: left;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+}
+
+.apresentation-recipie{
+    width: 80%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.apresentation-recipie .form{
+    display: none;
+}
+
+.apresentation-recipie .form.form-up{
+    position: fixed;
+    top: 24vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    left: 6rem;
+}
+
+.apresentation-recipie .visible{
+    position: fixed;
+    top: 40vh;
+    padding-left: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    opacity: .3;
+}
+
+.apresentation-recipie .invisible{
+    display: none;
+}
+
+.apresentation-recipie .form img{
+    width: 20%;
+    max-height: 100px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px;
+}
+
+.apresentation-recipie .form form{
+    width: 70vw;
+    padding: 30px;
+
+}
+
+.apresentation-recipie .form form input + div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.apresentation-recipie .form form input + div div{
+    padding-right: 10px;
+    flex: 1;
+}
+
+.apresentation-recipie .form form input,
+.apresentation-recipie .form form textarea{
+    width: 100%;
+    font: 600 0.3rem Roboto, sans-serif;
+    color: rgb(172, 7, 7);
+    padding: 5px 0;
+    border: none;
+    background: none;
+}
+
+.apresentation-recipie .form form textarea{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.apresentation-recipie .form form input:first-child{
+    font: 600 0.52rem Roboto, sans-serif;
+    text-align: center;
+}
+
+.apresentation-recipie .form form input:first-child::placeholder{
+    color: rgb(66, 63, 63);
+}
+
+.apresentation-recipie .form form p{
+    width: 100%;
+    font: 600 0.45rem Roboto, sans-serif;
+    padding: 8px 0;
+    margin-top: 16px;
+    border-top: 1px solid grey;
+    border-radius: 8px;
+    text-align: left;
+}

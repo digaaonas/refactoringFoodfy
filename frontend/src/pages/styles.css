@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+:root{
+    --primary-color: #F3D4BC
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    padding: 10px;
+    display: block;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid grey;
+    box-shadow: 0 0 2px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+header img{
+   margin-left: 10%;
+   height: 27px;
+}
+
+header .info-user{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .info-user .home-title{
+    padding: 20px;
+    margin-left: 20px;
+    font: 600 24px Roboto, sans-serif;
+    width: 20%;        
+}
+
+header .info-user div{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin-right: 10px;
+}
+
+header .info-user div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+    border: 1px solid grey;
+}
+
+header .info-user div .link-logout{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 34%;
+    color: black;
+    font: 600 16px Roboto, sans-serif;
+}

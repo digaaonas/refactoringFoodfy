@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --primary-color: #F3D4BC
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 40px;
+}
+
+body{
+    font: 400 14px Roboto, sans-serif;
+}
+
+.button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--primary-color);
+    border: 1px inset var(--primary-color);
+    border-radius: 8px;
+    font: 800 14px Roboto, sans-serif;
+    transition: ease 300ms;
+    padding: 10px;
+}
+
+.button:hover{
+    opacity: .8;
+}
+
+.input{
+    margin-bottom: 8px;
+    height: 35px;
+    font: 800 14px Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1.5px unset black;
+    padding: 10px;
+}
+
+.links{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    color: #31312c;
+    padding: 0 10px;
+    margin-top: 28px;
+    font: 800 14px Roboto, sans-serif;
+    opacity: .7;
+    transition: ease 300ms;
+
+}
+
+.links:hover{
+    opacity: 1;
+    color: black
+}
+
+/*=====DIOALOG MODAL=====*/
+.dialog{
+    width: 30vw;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.dialog-content{
+    background-color: var(--primary-color);
+    border-radius: 4px;    
+}
+
+#dialog-text{
+    font-size: 18px;
+    font-family: 'Montserrat', 'sans-serif';
+    line-height: 28px;
+    color: black;
+}
+
+.dialog-button{
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dialog-button.disable{
+    display: none;
+}
